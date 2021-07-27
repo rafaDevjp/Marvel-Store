@@ -9,7 +9,7 @@ import { HomeComponent } from './layout/home/home.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
-  {path:'show-comics', component: ShowComicsComponent}
+  {path:'show-comics/:id', component: ShowComicsComponent}
 
 ]
 

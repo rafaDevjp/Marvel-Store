@@ -1,12 +1,24 @@
 
 <div class="container">
     <div class="row">
-        <div class="card" [routerLink]="['show-comics']" routerLinkActive="router-link-active" >
-            <div class="thumb border" style="width: 99%; height: 80%;">
+        <div class="card" [routerLink]="['show-comics', itemComics.id]" routerLinkActive="router-link-active" >
+            <div class="thumb border">
                 <img src="{{itemComics.thumbnail.path}}.{{itemComics.thumbnail.extension}}" alt="imagem-comic" class="thumb-img">
             </div>
             <div class="card-info">
-                <span>{{itemComics.title}}</span>
+                <h5>{{itemComics.title}}</h5>
+
+            </div>
+            id {{itemComics.id}}
+            <div class="card-footer">
+                <div class="row space-between">
+                    <div class="">
+                        <small>Comprar</small>
+                    </div>
+                    <div class="">
+                        <small>Favoritar</small>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
