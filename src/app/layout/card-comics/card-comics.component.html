@@ -1,12 +1,12 @@
 
 <div class="container">
     <div class="row">
-        <div class="card">
-            <div class="thumb">
-                <p>card-comics works!</p>
+        <div class="card" [routerLink]="['show-comics']" routerLinkActive="router-link-active" >
+            <div class="thumb border" style="width: 99%; height: 80%;">
+                <img src="{{itemComics.thumbnail.path}}.{{itemComics.thumbnail.extension}}" alt="imagem-comic" class="thumb-img">
             </div>
             <div class="card-info">
-            
+                <span>{{itemComics.title}}</span>
             </div>
         </div>
     </div>

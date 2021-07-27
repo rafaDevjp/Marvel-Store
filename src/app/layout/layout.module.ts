@@ -6,6 +6,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardComicsComponent } from './card-comics/card-comics.component';
 import { ShowComicsComponent } from './show-comics/show-comics.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -17,7 +18,8 @@ import { ShowComicsComponent } from './show-comics/show-comics.component';
         CardComicsComponent,
         ShowComicsComponent],
     imports: [
-        CommonModule
+        CommonModule,
+        RouterModule
     ],
     exports: [
         HomeComponent,

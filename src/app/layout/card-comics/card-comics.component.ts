@@ -13,14 +13,8 @@ res: any = []=[]
 constructor() { }
 
   ngOnInit(): void {
-
-    for (let iterator of this.itemComics) {
-            this.res.push(iterator)
-            console.log(this.res);
-            
-
-    }
-     
+       console.log( this.itemComics);
+    
   }
 
 }

@@ -45,7 +45,7 @@
 }
 
 .border{
-    border:solid 1px gray
+    border:solid 1px rgb(212, 212, 212)
 }
 
 .p-1{
@@ -90,4 +90,8 @@
 
 .space-around{
     justify-content: space-around;
+}
+
+.space-center{
+    justify-content: center;
 }
