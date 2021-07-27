@@ -1,1 +1,93 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+
+
+
+:root {
+    --primary-color: rgb(27, 27, 27);
+    --secondary-color: rgb(59, 59, 59);
+    --warning-color: rgb(255, 230, 0);
+}
+
+.bg-dark{
+    background-color: var(--primary-color) ;
+}
+.bg-secondary{
+    background-color: var(--secondary-color) ;
+}
+.bg-warning{
+    background-color: var(--warning-color) ;
+}
+
+* body{
+    padding: 0px !important; 
+    margin: 0px !important;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+.container{
+    display: block;
+    max-width: 100%;
+    padding: 0px;
+    margin: auto;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.border{
+    border:solid 1px gray
+}
+
+.p-1{
+    padding: 5px;
+}
+.p-2{
+    padding: 10px;
+}
+.p-3{
+    padding: 15px;
+}
+.p-4{
+    padding: 20px;
+}
+.p-5{
+    padding: 25px;
+}
+
+.col-1{
+    width: 8.187%;
+}
+
+.col-2{
+    width: 16.519%;
+}
+
+.col-3{
+    width: 24.853%;
+}
+
+.col-4{
+    width: 33.185%;
+}
+
+.col-6{
+    width: 49.837%;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.space-around{
+    justify-content: space-around;
+}
