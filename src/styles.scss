@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+/* ESTE CSS FOI CRIADO BASEADO NAS CLASSES DE LAYOUT E GRID DO BOOTSTRAP */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
@@ -104,7 +104,7 @@
     text-decoration: none;
     
 }
-
+//ESTRUTURAS DE COLUNAS BASEADAS NA RESPONSIVIDADE
 @media screen and(min-width:700px){
     .col-1{
         width: 8.187%;
