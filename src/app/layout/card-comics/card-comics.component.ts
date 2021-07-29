@@ -9,11 +9,10 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CardComicsComponent implements OnInit {
 
 @Input()itemComics: any;
-res: any = []=[]
+
 constructor() { }
 
   ngOnInit(): void {
-       console.log( this.itemComics);
     
   }
 

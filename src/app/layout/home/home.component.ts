@@ -1,5 +1,4 @@
-import { Comics } from './../../models/comics';
-import { Observable } from 'rxjs';
+
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/service/data.service';
 
@@ -10,7 +9,7 @@ import { DataService } from 'src/app/service/data.service';
 })
 export class HomeComponent implements OnInit {
 
-  dataComics:Comics[] = []
+  dataComics:any[] = []
 
 	constructor(private dataService: DataService) { }
 
@@ -23,7 +22,7 @@ export class HomeComponent implements OnInit {
 		this.dataService.getComics().subscribe(comics => {
 			for (let iterator of comics) {
 				this.dataComics.push(iterator)
-				console.log(this.dataComics);
+				// console.log(this.dataComics);
 			}
 			
 		})

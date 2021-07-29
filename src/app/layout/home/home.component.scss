@@ -7,6 +7,7 @@
 .bg-master {
    background: url('/assets/image/background-comics.jpg');
    background-size: cover;
+   background-position: 50% 50%;
    background-clip: content-box;
    background-repeat: repeat-y;
 //    filter: grayscale(1);
@@ -15,8 +16,10 @@
 .opacity-master{
     width: 100%;
     min-height: 100vh;
-    background: rgba(172, 172, 172, 0.897);
-    margin: auto
+    background: rgba(26, 26, 26, 0.897);
+    margin: auto;
+    
+    
 }
 
 .board-comics{
