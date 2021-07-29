@@ -1,27 +1,24 @@
 # BlackFridayMarvel
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
+Este é um projeto básico desenvolvido em Angula 12, alimentado por uma Api publica da marvel, o mesmo se encontra em desenvolvimento, ainda não foi finalizado
+O projeto simula uma loja de quadrinho da Marvel onde o usuário seguirá os seguites passos..
 
-## Development server
+### Manual do Usuário
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+O usuarios iniciará sua jornada na tela principal (a tela home) Nela poderá ver a lista contendo os quadrinhos da Marvel
 
-## Code scaffolding
+o usuário poderá corre com o cursor sobre um quadrinho, sendo o favorito, poderá clicar sobre o mesmo e logo será direcionado para uma página de detalhes
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Já na página de detalhes será possível vizualisar algumas informaçãoes sobre o quadrinho, do tipo, titulo, preço e drecrição 
 
-## Build
+Também será possível  visualizar um seletor de quantidade, lá o usuário poderá definir quantos quadrinhos ele gostaria de comprar 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Logo a baixo do seletor de quantidade também existirá um botão de compra, neste botão o usuário poderá clicar se caso quiser comprar o quadrinho
 
-## Running unit tests
+#### Informação !
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Algumas funcionalidades requisitadas no anuciado de requisitos para esta aplicação ainda não foram implementadas, ficando para uma breve atualização do repositório. 
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
