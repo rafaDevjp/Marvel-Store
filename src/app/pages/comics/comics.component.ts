@@ -1,3 +1,4 @@
+import { ComicsService } from './../../service/comics.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./comics.component.scss']
 })
 export class ComicsComponent implements OnInit {
-
-  constructor() { }
+   comicsList:any;
+  constructor(private comicsSrvice: ComicsService) { }
 
   ngOnInit(): void {
+    this.comicsSrvice.getComics().subscribe( res =>{
+      this.comicsList = res
+    })
   }
 
 }

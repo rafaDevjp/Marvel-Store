@@ -1,1 +1,25 @@
-<p>characters works!</p>
+
+
+<div class="container">
+    <div class="row">
+        <div *ngFor="let item of charactersList">
+            <div class="card" [routerLink]="['/showItem', item.id]" >
+                <div class="thumb border">
+                    <img src="{{item.thumbnail.path}}.{{item.thumbnail.extension}}" alt="imagem-comic" class="thumb-img">
+                </div>
+                <div class="card-info" title="{{item.name}}">
+                    <p>{{item.name}}</p>
+                </div>
+               
+                <div class="card-footer">
+                    <div class="row space-center">
+                        <div class="visualizar">
+                            <a [routerLink]="['/showItem', item.id]">Detalhes</a> 
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

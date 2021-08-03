@@ -1,16 +1,15 @@
-
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+import { ComicsService } from './../../service/comics.service';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { DataService } from 'src/app/service/data.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
-    selector: 'app-show-comics',
-    templateUrl: './show-comics.component.html',
-    styleUrls: ['./show-comics.component.scss']
+  selector: 'app-show-item',
+  templateUrl: './show-item.component.html',
+  styleUrls: ['./show-item.component.scss']
 })
-export class ShowComicsComponent implements OnInit {
-    details:any;
+export class ShowItemComponent implements OnInit {
+
+  details:any;
     quantidade: number = 1;
 
 
@@ -18,7 +17,7 @@ export class ShowComicsComponent implements OnInit {
     //Aqui é conhecida injeção de dependência 
     constructor(
         private active: ActivatedRoute,
-        private dataService: DataService) { }
+        private comicsService:ComicsService) { }
 
 
         //Função ngOninit inicializando os metodos doservice dataService e chamando
@@ -26,7 +25,7 @@ export class ShowComicsComponent implements OnInit {
     ngOnInit(): void {
         const id = this.active.snapshot.paramMap.get('id') 
         console.log(id);
-        this.dataService.getCimicsId(id).subscribe(data => {
+        this.comicsService.getCimicsId(id).subscribe(data => {
             console.log(data)
             this.details = data
             console.log(this.details)});
