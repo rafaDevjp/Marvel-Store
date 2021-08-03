@@ -1,16 +1,14 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-
-import {HttpClient} from '@angular/common/http'
-import { Observable} from 'rxjs';
-import  {map} from'rxjs/operators'
-
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
-export class DataService {
+export class ComicsService {
 
-  //Valores das chaves da API  da Marvel
+   //Valores das chaves da API  da Marvel
   //Aqui eu dividi em fraguimentos para melhor definição e para facilitar a busca por ID
 
   HASH = '82f2eb84d1df6a077ce44033e0645474' 
@@ -43,5 +41,4 @@ export class DataService {
   }
 
 }//END CLASS
-
 

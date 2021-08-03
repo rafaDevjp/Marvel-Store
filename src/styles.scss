@@ -37,6 +37,7 @@
 }
 
 .row{
+    box-sizing: border-box;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -106,24 +107,38 @@
 }
 //ESTRUTURAS DE COLUNAS BASEADAS NA RESPONSIVIDADE
 @media screen and(min-width:700px){
+    .col{
+        display: flex;
+        flex:content
+    }
     .col-1{
         width: 8.187%;
+        display: flex;
+        flex:content
     }
     
     .col-2{
         width: 16.519%;
+        display: flex;
+        flex:content
     }
     
     .col-3{
         width: 24.853%;
+        display: flex;
+        flex:content
     }
     
     .col-4{
         width: 33.185%;
+        display: flex;
+        flex:content
     }
     
     .col-6{
         width: 49.837%;
+        display: flex;
+        flex:content
         
     }
 }

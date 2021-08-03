@@ -1,4 +1,5 @@
 
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DataService } from 'src/app/service/data.service';
@@ -10,7 +11,7 @@ import { DataService } from 'src/app/service/data.service';
 })
 export class ShowComicsComponent implements OnInit {
     details:any;
-    quantidade:number = 0;
+    quantidade: number = 1;
 
 
 
@@ -29,6 +30,7 @@ export class ShowComicsComponent implements OnInit {
             console.log(data)
             this.details = data
             console.log(this.details)});
+
         }
     
     buyList(){

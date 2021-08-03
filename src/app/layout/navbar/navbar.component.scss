@@ -1,6 +1,8 @@
 /** Css exclusivo do navcbar**/
 
 .nav{
+    max-width: 100%;
+    display: block;
     color: whitesmoke;
     background: var(--primary-color);
 }
@@ -18,3 +20,24 @@
     text-align: center;
     margin: auto;
 }
+
+.nav-menu {
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-menu li{
+    display: inline;
+    position: relative;
+    margin: auto;
+}
+.nav-menu a{
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    flex: auto;
+}
+
+//  npm install bootstrap@4.6 jquery@3.5.1 popper.js@1.16.1 --save

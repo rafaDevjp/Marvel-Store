@@ -1,14 +1,24 @@
 
-<header class="contaner nav p-1">
-    <div class="row space-between">
-        <a [routerLink]="['/']" rclass="col-2" >
-            <img src="../assets/image/marvel-logo.svg" alt="Logo Marvel" class="logo">
-        </a>
-        <!-- Implementação do icon de checkout -->
-        <!-- <div class="checkout border">
-            <a href=""><img src="../assets/image/shopping-basket-solid.svg" class="checkout" alt="" style="width:42px"></a>
-        </div> -->
-        
+<header class="nav">
+  
+    <div class="container">
+        <div class="row space-between">
+          
+            <a [routerLink]="['/']" rclass="col-2" >
+                <img src="../assets/image/marvel-logo.svg" alt="Logo Marvel" class="logo">
+            </a>
+          
+            <div class="col-6">
+                <ul class="nav-menu">
+                    <li><a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >CHARACTERS</a></li>
+                    <li><a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >COMICS</a></li>
+                    <li><a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >CREATORS</a></li>
+                    <li><a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >EVENTS</a></li>
+                    <li><a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >STORIES</a></li>
+                </ul>
+             </div>
+        </div>
     </div>
+ 
 
 </header>
