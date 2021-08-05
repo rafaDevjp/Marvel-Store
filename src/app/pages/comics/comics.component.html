@@ -1,9 +1,9 @@
 
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div *ngFor="let item of comicsList">
-            <div class="card" [routerLink]="['/showItem', item.id]" >
+            <div class="card" [routerLink]="['/show-itens', item.id]" >
                 <div class="thumb border">
                     <img src="{{item.thumbnail.path}}.{{item.thumbnail.extension}}" alt="imagem-comic" class="thumb-img">
                 </div>
@@ -14,7 +14,7 @@
                 <div class="card-footer">
                     <div class="row space-center">
                         <div class="visualizar">
-                            <a [routerLink]="['/showItem', item.id]">Detalhes</a> 
+                            <a [routerLink]="['/show-itens', item.id]">Detalhes</a> 
                         </div>
                        
                     </div>

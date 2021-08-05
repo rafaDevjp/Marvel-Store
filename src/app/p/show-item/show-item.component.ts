@@ -1,4 +1,4 @@
-import { ComicsService } from './../../service/comics.service';
+import { ComicsService } from '../../service/comics.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 

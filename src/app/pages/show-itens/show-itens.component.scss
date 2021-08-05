@@ -1,0 +1,108 @@
+
+
+#show-comics{
+    width: 100%;
+    min-height: 100vh;
+    background: url('/assets/image/bg-show-comics.jpg');
+    background-blend-mode: screen;
+    
+    // background: url('assets/image/bg-show-comics.jpg') ;
+}
+
+details{
+    display: flex;
+    height: 800px;
+    align-items: center;
+    
+}
+
+.thumb-img{
+    width: 230px;
+    height: 350px;
+    box-shadow:0px 6px 6px  rgba(224, 120, 0, 0.788);
+    margin: 10px;
+}
+
+.details-box-text{
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.719);
+    
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn-buy{
+    width: 100px;
+    display: block;
+    background: rgb(240, 139, 8);
+    color: whitesmoke;
+    border-radius: 1px;
+    padding: 20px;
+    font-weight: 400;
+    font-size: 23px;
+    text-align: center;
+    text-decoration: none;
+}
+.price{
+    font-size: 25px;
+}
+.btn-buy:hover{
+    position: relative;
+    top: -4px;
+    background: rgb(34, 194, 13);
+}
+
+.btn-qnt button{
+    width: 40px; 
+    height: 40px;
+    color: whitesmoke;
+    background: transparent;
+    border:solid 1px rgb(240, 139, 8);
+    border-radius: 5px;
+    // padding: 8px 15px;
+    margin: 2px 10px;
+}
+
+
+
+@media screen and(max-width: 578){
+    .details-box-text{
+       width:90%
+    }
+    
+    .btn-buy{
+        width: 100px;
+        display: block;
+        background: rgb(240, 139, 8);
+        color: whitesmoke;
+        border-radius: 1px;
+        padding: 20px;
+        font-weight: 400;
+        font-size: 23px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .price{
+        font-size: 25px;
+    }
+    .btn-buy:hover{
+        position: relative;
+        top: -4px;
+        background: rgb(34, 194, 13);
+    }
+    
+    .btn-qnt button{
+        width: 40px; 
+        height: 40px;
+        color: whitesmoke;
+        background: transparent;
+        border:solid 1px rgb(240, 139, 8);
+        border-radius: 5px;
+        // padding: 8px 15px;
+        margin: 2px 10px;
+    }
+}
+

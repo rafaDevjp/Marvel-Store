@@ -5,8 +5,7 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
-import { MasterComponent } from './master/master.component';
-import { PagesModule } from './../pages/pages.module';
+
 
 
 
@@ -15,11 +14,11 @@ import { PagesModule } from './../pages/pages.module';
     declarations: [
         NavbarComponent,
         FooterComponent,
-        MasterComponent],
+       ],
     imports: [
         CommonModule,
         RouterModule,
-        PagesModule
+       
     ],
     exports: [
         NavbarComponent,

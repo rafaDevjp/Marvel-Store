@@ -1,41 +1,36 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-
-import { ShowItemComponent } from './pages/show-item/show-item.component';
-import { StoriesComponent } from './pages/stories/stories.component';
-import { EventsComponent } from './pages/events/events.component';
-import { CharactersComponent } from './pages/characters/characters.component';
-import { ComicsComponent } from './pages/comics/comics.component';
-import { CreatorsComponent } from './pages/creators/creators.component';
-import { MasterComponent } from './layout/master/master.component';
-
-
-
+import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
 
 
 const routes: Routes = [
-  {
-    path:'', 
-    component: MasterComponent,
-    children:[
-      {path:'', component: CharactersComponent},
-      {path:'pages/comics', component:ComicsComponent},
-      {path:'pages/creators', component: CreatorsComponent},
-      {path:'pages/events', component: EventsComponent},
-      {path:'pages/stories', component: StoriesComponent},
-      
-    ]
-  },
-  {path:'showItem/:id', component: ShowItemComponent}
-  
+    {
+        path: '',
+        loadChildren: () => import('./pages/character/character.module').then(m => m.CharacterModule)
+    },
+    {
+        path: 'comics',
+        loadChildren: () => import('./pages/comics/comics.module').then(m => m.ComicsModule)
+    },
+    {
+        path: 'show-itens/:id',
+        loadChildren: () => import('./pages/show-itens/show-itens.module').then(m => m.ShowItensModule)
+    },
+    {
+        path: '',
+        redirectTo: '',
+        pathMatch: 'full'
+    },
+
 
 ]
 
 @NgModule({
-  declarations: [],
-  imports: [
-    RouterModule.forRoot(routes)
-  ],
-  exports:[RouterModule]
+    declarations: [],
+    imports: [
+        CommonModule,
+        RouterModule.forRoot(routes)
+    ],
+    exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -1,20 +1,20 @@
 
 <header class="nav">
   
-    <div class="container">
-        <div class="row space-between">
+    <div class="container-fluid ">
+        <div class="row justify-content-around">
           
-            <a [routerLink]="['/']" rclass="col-2" >
+            <a [routerLink]="['']" rclass="col-2" >
                 <img src="../assets/image/marvel-logo.svg" alt="Logo Marvel" class="logo">
             </a>
           
-            <div class="col-6">
-                <ul class="nav-menu">
+            <div class="col-6 border align-items-center">
+                <ul class="nav-menu border">
                     <li><a [routerLink]="['']" routerLinkActive="router-link-active" >CHARACTERS</a></li>
-                    <li><a [routerLink]="['pages/comics']" routerLinkActive="router-link-active" >COMICS</a></li>
-                    <li><a [routerLink]="['pages/creators']" routerLinkActive="router-link-active" >CREATORS</a></li>
-                    <li><a [routerLink]="['pages/events']" routerLinkActive="router-link-active" >EVENTS</a></li>
-                    <li><a [routerLink]="['pages/stories']" routerLinkActive="router-link-active" >STORIES</a></li>
+                    <li><a [routerLink]="['/comics']" routerLinkActive="router-link-active" >COMICS</a></li>
+                    <li><a [routerLink]="['/creators']" routerLinkActive="router-link-active" >CREATORS</a></li>
+                    <li><a [routerLink]="['/events']" routerLinkActive="router-link-active" >EVENTS</a></li>
+                    <li><a [routerLink]="['/stories']" routerLinkActive="router-link-active" >STORIES</a></li>
                 </ul>
              </div>
         </div>

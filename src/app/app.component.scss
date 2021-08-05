@@ -1,0 +1,23 @@
+
+/* Estas são classes exclisivas de Css para o componete Page Master*/
+
+
+.bg-master {
+   background: url('/assets/image/background-comics.jpg');
+   background-size: cover;
+   background-position: 50% 50%;
+}
+
+.opacity-master{
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(26, 26, 26, 0.897);
+}
+
+.board-comics{
+    padding: 10px;
+    width: 85%;
+    min-height: 100vh;
+    background: rgba(202, 202, 202, 0.705);
+    margin: auto
+}
