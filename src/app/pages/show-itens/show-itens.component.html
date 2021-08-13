@@ -1,41 +1,43 @@
 
 
 <!-- Tela show Itens onde apresenta os detalhes do produto-->
-<section class=" container-fluid " id="show-comics">
-    <div class="details" *ngFor="let item of details">
-        <div class="p-1 bg-secondary text-white">
-            <a [routerLink]="['']"> Voltar</a>
-        </div>
-        <div class="p-5 ">
-            <div class="row  space-center ">
-                <div class="">
-                    <div class="thumbnail">
-                        <img src="{{item.thumbnail.path}}.{{item.thumbnail.extension}}" class="thumb-img" alt="details comics">
-                    </div>
-                </div>
-<!--             Bloco de texto  e botões da tela                   -->
-                <div class="col-6 details-box-text ">
-                    <div class="p-2">
-                        <h2>{{item.title}}</h2>
-                        <p>{{item.description}}</p>
-                        <p class="price">Price {{item.prices[0].price | currency:'USD'}}</p>
-                        <div class="p-2 btn-qnt">
-                            Quant:
-                            <button (click)="adicionarComics()">+</button>
-                            <span >
-                                {{quantidade}}
-                            </span>
-                            <button (click)="removeComics()">-</button>
+<section class="r">
+    <div class="p-1 bg-dark  ">
+        <a class="p-2 text-white  text-decoration-none" [routerLink]="['']"> Voltar</a>
+    </div>
+    <div id="show-comics" class="d-flex  align-items-center">
+        <div class="container-fluid bg-filte" *ngFor="let item of details">
+            <div class="p-5 ">
+                <div class="row  justify-content-center">
+                    <div class="">
+                        <div class="thumbnail">
+                            <img src="{{item.thumbnail.path}}.{{item.thumbnail.extension}}" class="thumb-img" alt="details comics">
                         </div>
                     </div>
-                    
-                    <div class class="space-end">
-                        <a class="btn-buy" onclick="buyList()" >Comprar</a>
+                    <!--   Bloco de texto  e botões da tela      -->
+                    <div class="col-6 details-box-text">
+                        <div class="p-2 ">
+                            <h2>{{item.title}}</h2>
+                            <p>{{item.description}}</p>
+                            <p class="price">Price {{item.prices[0].price | currency:'USD'}}</p>
+                            <div class="p-2 btn-qnt">
+                                Quant:
+                                <button (click)="adicionarComics()">+</button>
+                                <span >
+                                    {{quantidade}}
+                                </span>
+                                <button (click)="removeComics()">-</button>
+                            </div>
+                        </div>
+                        
+                        <div class class="space-end">
+                            <a class="btn btn-lg btn-warning text-white" onclick="buyList()" >Comprar</a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
     </div>
-</div>
 
 </section>
 

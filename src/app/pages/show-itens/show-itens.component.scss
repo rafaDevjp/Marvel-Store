@@ -1,19 +1,11 @@
 
-
 #show-comics{
     width: 100%;
-    min-height: 100vh;
+    min-height:89vh;
     background: url('/assets/image/bg-show-comics.jpg');
     background-blend-mode: screen;
     
     // background: url('assets/image/bg-show-comics.jpg') ;
-}
-
-details{
-    display: flex;
-    height: 800px;
-    align-items: center;
-    
 }
 
 .thumb-img{
