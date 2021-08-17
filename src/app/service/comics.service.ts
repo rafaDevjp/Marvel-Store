@@ -17,7 +17,7 @@ export class ComicsService {
 
   TIMESTAMP = '1627338801875'
 
-  URL_BASE = 'https://gateway.marvel.com:443/v1/public'
+  URL_BASE = 'https://gateway.marvel.com:443/v1/public/comics'
 
   AUTHETICATION_KEY = `?ts=${this.TIMESTAMP}&apikey=${this.PUBLIC_KEY}&hash=${this.HASH}`
 
