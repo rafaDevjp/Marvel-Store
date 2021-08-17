@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { MasterPageComponent } from './layout/master-page/master-page.component';
+import { Error404Component } from './pages/error404/error404.component';
 
 
 const routes: Routes = [
@@ -31,6 +32,10 @@ const routes: Routes = [
     {
         path: 'show-itens/:id',
         loadChildren: () => import('./pages/show-itens/show-itens.module').then(m => m.ShowItensModule)
+    },
+    {
+        path: '**',
+        component: Error404Component
     },
 ]
 

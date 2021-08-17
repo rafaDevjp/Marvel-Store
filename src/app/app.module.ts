@@ -6,10 +6,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { LayoutModule } from './layout/layout.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
+import { Error404Component } from './pages/error404/error404.component';
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, Error404Component],
   imports: [
     BrowserModule,
     AppRoutingModule,

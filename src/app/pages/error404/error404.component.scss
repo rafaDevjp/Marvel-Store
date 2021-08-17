@@ -1,0 +1,20 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,700;1,700&display=swap');
+
+
+
+#page-not-found .container-fluid{
+    background: url(/assets/image/pg-404.png);
+    background-size: cover;
+    height: 100vh;
+}
+.page-title{
+    font-size: 60pt;
+    color: rgba(243, 243, 243, 0.788);
+    text-shadow:1px 1px 4px rgba(131, 131, 131, 0.658);
+    font-weight: 800px;
+    font-family: 'Comic Neue', cursive;
+}
